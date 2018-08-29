@@ -23,7 +23,7 @@ router.post('/api/contatos', function(req, res) {
     Contato.create({
         nome : req.body.nome,
         email : req.body.email,
-        telefone : req.body.telefone,
+        mensagem : req.body.mensagem,
         done : false
     }, function(err, contato) {
         if (err)
